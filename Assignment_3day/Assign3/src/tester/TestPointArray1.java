@@ -6,7 +6,7 @@ import com.app.geometry.Point2D;
 public class TestPointArray1 {
 
 	public static void main(String[] args) {
-		int choice, findPoint,dp1,dp2,noOfPoints;
+		int choice,dp1,dp2,noOfPoints;
 		System.out.println("how many no of points to plot from user: \n");
 		Scanner sc= new Scanner(System.in);
 //		noOfPoints=sc.nextInt();
@@ -29,18 +29,17 @@ public class TestPointArray1 {
 		{
 		case 1:
 			System.out.println("4. enter index of point:\n");
-			findPoint=sc.nextInt();
-			for(int i=0;i<points.length;i++)
-			{
-				if(i==findPoint)
+		    int	findPoint=sc.nextInt();
+			
+				if(findPoint<points.length && findPoint>=0)
 				{
-					System.out.println("point:"+points[i].getDetails());
+					System.out.println("point:"+points[findPoint].getDetails());
 				}
-				else
+				else if(findPoint>points.length || findPoint<0)
 				{
 					System.out.println("Invalid index , pls retry!!!!\n");
 				}
-			}
+			
 			break;
 
 		case 2:
