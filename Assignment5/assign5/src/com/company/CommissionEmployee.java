@@ -38,4 +38,11 @@ public class CommissionEmployee extends Employee {
 		System.out.println("Commission employee Salary of employee:"+CommissionEmployeeSalary);
 
 	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "firstname:"+getFirstName()+"  lastname:"+getLastName()+ " socialSecurityNumber:"+ getSocialSecurityNumber() +" CommissionEmployeeSalary:"+CommissionEmployeeSalary;
+
+	}
 }

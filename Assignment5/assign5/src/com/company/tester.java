@@ -23,14 +23,16 @@ public class tester {
 			Employee obj= new SalariedEmployee();
 			obj.accept();
 			obj.salary();
-			obj.display();
+			System.out.println(obj.toString());
+//			obj.display();
 			break;
 		}
 		case 2: {
 			Employee obj= new HourlyEmployee();
 			obj.accept();
 			obj.salary();
-			obj.display();
+//			obj.display();
+			System.out.println(obj.toString());
 			break;
 		}
 		case 3: {
@@ -44,7 +46,8 @@ public class tester {
 			Employee obj= new BaseplusCommissionEmployee();
 			obj.accept();
 			obj.salary();
-			obj.display();
+//			obj.display();
+			System.out.println(obj.toString());
 			break;
 		}
 		default:

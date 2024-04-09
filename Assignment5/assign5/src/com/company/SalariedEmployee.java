@@ -39,5 +39,11 @@ public class SalariedEmployee extends Employee {
 		System.out.println("weekly Salary of employee:"+weeklySalary);
 
 	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "firstname:"+getFirstName()+"  lastname:"+getLastName()+ " socialSecurityNumber:"+ getSocialSecurityNumber() +" weeklySalary"+weeklySalary;
+	}
 
 }

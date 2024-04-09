@@ -59,4 +59,11 @@ public class HourlyEmployee extends Employee {
 		System.out.println("houerly employee Salary of employee:"+totalwage);
 
 	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "firstname:"+getFirstName()+"  lastname:"+getLastName()+ " socialSecurityNumber:"+ getSocialSecurityNumber() +" totalwage:"+totalwage;
+
+	}
 }

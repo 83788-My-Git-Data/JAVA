@@ -41,4 +41,10 @@ public class BaseplusCommissionEmployee extends Employee {
 
 	}
 
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "firstname:"+getFirstName()+"  lastname:"+getLastName()+ " socialSecurityNumber:"+ getSocialSecurityNumber() +" baseCommissionSalary:"+baseCommissionSalary;
+
+	}
 }
