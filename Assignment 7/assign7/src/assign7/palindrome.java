@@ -10,15 +10,30 @@ public class palindrome {
 	 public static void main(String[] args){
 		// TODO Auto-generated constructor stub
 		 
-		 int no;
+		 String no,reverseno="";
+		 
 		 Scanner sc=new Scanner(System.in);
 		 System.out.println("enter no. to check palindrome:");
-			 no=sc.nextInt();
-			
-			StringBuilder kk= new StringBuilder(no);
-			int kkint=Integer.parseInt(kk.toString());
-			System.out.println(no==kkint);
-			
+		 no=sc.next();
+		 String arr[]=no.split("");
+
+		 
+		 for(int i=no.length()-1;i>=0;i--)
+		 {
+//			 System.out.println(no);
+			 reverseno=reverseno+arr[i];
+		 }
+		 
+		if(no.equals(reverseno))
+				{
+			System.out.println("palandrom");
+				}
+		else
+		{
+			System.out.println("not palandrom");
+		}
+		
+
 			sc.close();
 		 
 	}
